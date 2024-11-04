@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif        
+        }
+        h1 {
+            font-size: 40;
+        }
+        input {
+            padding: 10px;
+            font-size: 20px;
+        } 
+        button {
+            padding: 10px;
+            font-size: 20px;
+            background-color: pink;
+            color: white;
+            border-radius: 10px;
+            border:none;      
+             }
+        .container {
+            text-align: center;
+            margin: 10px auto;
+            width: 50%;
+            padding-bottom: 30px;
+            max-width: 1200px;
+            background-color: pink;
+            border-radius: 30px;
+        }
+        .divket {
+            margin: 10px auto;
+            text-align: center;
+        }
+        .movie {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+            background-color: aqua;
+           width: 30%;
+        }
+        .movie img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cari Judul Film</h1>
+        <input  id="movieInput" type="text" placeholder="cari aku dong" >
+        <button onclick=" searchMovie()">Cari</button>      
+    </div>
+   <script src="script.js"></script>
+    <div id="movieList"></div>
+</body>
+</html>
